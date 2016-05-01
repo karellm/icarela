@@ -1,0 +1,447 @@
+html, body {
+    color: $grey-text;
+    font-family: $font-sans;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0; padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 980px;
+}
+
+/* Header
+ * ------------------------ */
+ $header-height: 72px;
+ $header-bg: #F9F9F9;
+
+.page-header {
+    background: $header-bg;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: $header-height;
+    z-index: 10;
+}
+
+.page-logo {
+    background: url(../images/logo@2x.png) no-repeat 0 0;
+    background-size: 284px 39px;
+    border: none;
+    text-indent: -9999px;
+
+    display: block;
+    float: left;
+    margin: ($header-height - 38px)/2 0 0;
+    padding: 0;
+    width: 284px; height: 39px;
+}
+
+/* Menu
+ * ------------------------ */
+.page-menu {
+    float: right;
+}
+
+.page-menu ul {
+    list-style: none;
+    /* overflow: hidden; */
+    margin: 0; padding: 0;
+}
+
+.page-menu li {
+    $border-size: 3px;
+
+    float: left;
+    position: relative;
+    margin: 0 0 0 12px;
+
+    &:hover {
+        /* border-bottom: 3px solid \$grey-separator; */
+        height: $header-height - $border-size;
+
+        ul {
+            padding: 0 0 12px 0;
+            padding: 12px 0;
+        }
+    }
+
+    &.decouverte:hover ul { height: 24px * 3 + 12px; }
+    &.distribution:hover ul { height: 24px * 10 + 12px; }
+
+    &.active {
+        border-bottom: $border-size solid $light-blue;
+        color: $light-blue;
+        height: $header-height - $border-size;
+
+        & > a {
+            color: $light-blue;
+        }
+    }
+
+    &.dropdown:hover {
+        border: none;
+        height: $header-height;
+    }
+
+    a {
+        color: $blue;
+        font-size: 16px;
+        letter-spacing: 1px;
+        line-height: 70px;
+        text-decoration: none;
+
+        display: inline-block;
+        padding: 0 6px;
+        height: $header-height;
+
+        &:hover {
+            color: $light-blue;
+        }
+    }
+
+    ul {
+        background: $header-bg;
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+        box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: $header-height;
+        left: -12px;
+        padding: 0;
+        overflow: hidden;
+        width: 160px;
+        height: 0;
+        z-index: 1;
+
+        transition: all .2s;
+
+        li {
+            line-height: 24px;
+            float: none;
+            margin: 0;
+            padding: 0;
+            height: 24px;
+        }
+
+        li.active,
+        li:hover {
+            border: none;
+            height: 24px;
+        }
+
+        a {
+            line-height: 24px;
+            padding: 0 18px;
+            height: 24px;
+        }
+
+        .title {
+            color: #737373;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 0 18px;
+            text-transform: uppercase;
+        }
+
+        li + .title {
+            margin-top: 12px;
+        }
+    }
+}
+
+/* Cover
+ * ------------------------ */
+.page-cover {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    overflow: hidden;
+    position: relative;
+    margin-top: 72px;
+    width: 100%;
+    height: 320px;
+
+    .container {
+        position: relative;
+    }
+
+    blockquote {
+      font-style: italic;
+      float: right;
+      position: absolute;
+      top: 40px; right: 30px;
+      /* margin: 40px 30px 0 0; */
+      width: 340px;
+      z-index: 10;
+
+      &:before {
+        color: #293445;
+        font-family: $font-sans;
+        font-size: 100px;
+        font-style: normal;
+        float: left;
+        content: '“';
+        margin-top: -25px;
+        margin-left: -50px;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+
+    cite {
+      background: url(../images/sprite.png) no-repeat 0 0;
+      text-indent: -9999px;
+
+      display: block;
+      float: right;
+      margin-top: 10px;
+    }
+
+    .freccia cite {
+      width: 103px; height: 57px;
+    }
+
+    .sparviero cite {
+      background-position: -110px 0;
+      width: 178px; height: 48px;
+    }
+}
+
+/* BREADCRUMB
+ * ------------------------ */
+.page-breadcrumb {
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+    li {
+        float: left;
+    }
+
+    li, a {
+        color: #b9b9b9;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    li + li {
+        &:before {
+            content: '/';
+            margin: 0 12px;
+        }
+    }
+}
+
+/* PAGE BODY
+ * ------------------------ */
+.page-body {
+  margin: 24px 0;
+  overflow: hidden;
+}
+
+ul.page-body-nav {
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 24px 0;
+
+    li {
+        float: right;
+        padding: 0 8px 0 16px;
+    }
+
+    .title {
+        color: #999;
+        font-variant: small-caps;
+        text-transform: lowercase;
+        float: left;
+        padding: 0 0 0 8px;
+    }
+}
+
+.page-body-nav {
+    border-bottom: 1px solid $grey-separator;
+    margin: 48px 0;
+
+    li {
+        a {
+            color: $grey-text;
+            text-decoration: none;
+
+            &:hover {
+                color: $light-blue;
+            }
+        }
+
+        &.active a {
+            color: #999;
+        }
+    }
+
+    .centered-list {
+        display: table;
+        margin: 0 auto;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 24px 0;
+        }
+        li {
+            display: inline;
+            padding: 0 24px;
+        }
+    }
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+a {
+    color: $light-blue;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-next:before {
+    content: "\e600";
+}
+.icon-prev:before {
+    content: "\e601";
+}
+
+body.fullscreen-page {
+    .page-body {
+        margin: 0;
+    }
+
+    h2 {
+        color: #FFF;
+        font-size: 42px;
+        text-shadow: 0 1px 1px #000;
+        margin-bottom: 24px;
+    }
+
+    // .caption, .contrast {
+    //     background: rgba(0, 0, 0, 0.3);
+    //     border-radius: 3px;
+    //     box-shadow: 0 0 23px 5px rgba(0, 0, 0, 0.4);
+    //     margin-left: -10px;
+    //     padding: 10px;
+    // }
+
+    p {
+        color: #FFF;
+        font-size: 18px;
+        line-height: 28px;
+        text-shadow: 0 1px 1px #000;
+        margin-bottom: 24px;
+    }
+
+    #slides .caption {
+        margin: 140px 0 0 0;
+        width: 400px;
+    }
+
+    .slides-navigation a {
+        border-radius: 30px;
+        display: block;
+        text-decoration: none;
+        border: 3px solid #fff;
+        color: white;
+        font-size: 24px;
+        line-height: 35px;
+        margin: 0 24px;
+        text-shadow: 0 1px 1px #000;
+        text-align: center;
+        height: 32px;
+        width: 32px;
+        top: -32px;
+        padding: 1px;
+        box-shadow: 0 1px 1px black;
+        transition: background 0.15s ease;
+    }
+    .slides-navigation a:hover {
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    .icon-next {
+        margin-left: 3px;
+    }
+
+    .icon-prev {
+        margin-left: -3px;
+    }
+}
+
+/* PAGE FOOTER
+ * ------------------------ */
+.page-footer {
+    background: url(../images/clouds.jpg) no-repeat top center;
+    height: 300px;
+
+    .container {
+        position: relative;
+        padding-top: 260px;
+    }
+
+    p {
+        color: #859ABA;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+.page-social {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    a {
+        text-indent: -9999px;
+
+        display: block;
+        float: right;
+        margin-left: 8px;
+        width: 32px; height: 32px;
+    }
+
+    .facebook {
+        background: url('../images/social/facebook_32.png') no-repeat 0 0;
+    }
+    .twitter {
+        background: url('../images/social/twitter_32.png') no-repeat 0 0;
+    }
+}

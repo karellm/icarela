@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <title>{{ title }} | Icarela</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:400,600,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+</head>
+
+<body class="{{#if fullscreen}}fullscreen-page{{/if}}">
+
+<header class="page-header">
+    <div class="container">
+        <a href="/" class="page-logo">Icarela</a>
+        <nav class="page-menu">
+            <ul>
+                <li class="decouverte dropdown {{activeClass permalink 'decouverte' 0}}">
+                    <a href="/decouverte">Découverte</a>
+                    <ul>
+                        <li class="{{activeClass permalink 'decouverte/baptemes/la-baule.html' 1}}"><a href="/decouverte/baptemes/la-baule.html">Baptêmes</a></li>
+                        <li class="{{activeClass permalink 'decouverte/initiation/vol-initiation.html' 1}}"><a href="/decouverte/initiation/vol-initiation.html">Initiation</a></li>
+                        <li class="{{activeClass permalink 'decouverte/guides/classes-ulm.html' 1}}"><a href="/decouverte/guides/classes-ulm.html">Guides</a></li>
+                    </ul>
+                </li>
+                <li class="{{activeClass permalink 'ecole' 0}}"><a href="/ecole">Ecole de pilotage</a></li>
+                <li class="distribution dropdown {{activeClass permalink 'distribution' 0}}">
+                    <a href="/distribution">Représentation</a>
+                    <ul>
+                        <li class="title">Multiaxes</li>
+                        <li class="{{activeClass permalink 'distribution/skyracer-ng6-ul' 1}}"><a href="/distribution/skyracer-ng6-ul">Skyracer</a></li>
+                        <li class="{{activeClass permalink 'distribution/sila-450c' 1}}"><a href="/distribution/sila-450c/">Sila 450c</a></li>
+                        <li class="title">Autogires</li>
+                        <li class="{{activeClass permalink 'distribution/trixy/liberty' 2}}"><a href="/distribution/trixy/liberty.html">Trixy Liberty</a></li>
+                        <li class="{{activeClass permalink 'distribution/trixy/princess' 2}}"><a href="/distribution/trixy/princess.html">Trixy Princess</a></li>
+                        <li class="{{activeClass permalink 'distribution/ela-10-eclipse' 1}}"><a href="/distribution/ela-10-eclipse">ELA 10-Eclipse</a></li>
+                        <li class="{{activeClass permalink 'distribution/ela-09-junior' 1}}"><a href="/distribution/ela-09-junior">ELA 09-Junior</a></li>
+                        <li class="{{activeClass permalink 'distribution/ela-07s' 1}}"><a href="/distribution/ela-07s">ELA 07s</a></li>
+                        <li class="{{activeClass permalink 'distribution/ela-07-cougar' 1}}"><a href="/distribution/ela-07-cougar">ELA 07-Cougar</a></li>
+                    </ul>
+                </li>
+                <li class="{{activeClass permalink 'services' 0}}"><a href="/services.html">Services</a></li>
+                <li class="{{activeClass permalink 'contact' 0}}"><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+{{#if fullscreen}}
+    <div class="page-body">
+{{else}}
+    <div class="page-cover" style="background-image:url({{ cover }})"></div>
+
+    <div class="page-body">
+        <div class="container">
+{{/if}}
