@@ -1,4 +1,5 @@
 var Metalsmith  = require('metalsmith');
+var ignore      = require('metalsmith-ignore');
 var markdown    = require('metalsmith-markdown');
 var templates   = require('metalsmith-templates');
 var sass        = require('metalsmith-sass');
@@ -34,6 +35,7 @@ Handlebars.registerHelper(
 );
 
 module.exports = Metalsmith(__dirname)
+  .use(ignore('**/.DS_Store'))
   .use(markdown())
   .use(templates('handlebars'))
   .use(imagemin({
