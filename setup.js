@@ -45,4 +45,4 @@ module.exports = Metalsmith(__dirname)
   .use(sass({
     outputStyle: 'compressed'
   }))
-  .destination('./build');
+  .destination('./docs');

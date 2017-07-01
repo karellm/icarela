@@ -33,5 +33,4 @@ npm-debug.log
 testem.log
 
 # project files
-/build
 .env
