@@ -68,7 +68,7 @@ html, body {
     }
 
     &.decouverte:hover ul { height: 24px * 3 + 12px; }
-    &.distribution:hover ul { height: 24px * 3 + 12px; }
+    &.distribution:hover ul { height: 24px * 5 + 12px; }
 
     &.active {
         border-bottom: $border-size solid $light-blue;

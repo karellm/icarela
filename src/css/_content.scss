@@ -372,3 +372,26 @@ p.message {
     background: url('../images/social/twitter_32.png') no-repeat 0 0;
     color: #598dca;
 }
+
+.numbers {
+    display: flex;
+    margin-top: 48px;
+
+    .number {
+        flex: 1 1 100px;
+
+        span {
+            text-align: center;
+            display: block;
+        }
+
+        :first-child {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        :last-child {
+            color: #adadad;
+        }
+    }
+}
