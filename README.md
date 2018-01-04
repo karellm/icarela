@@ -4,7 +4,7 @@
 
 ```
 npm install
-node index.js
+node serve.js
 # visit localhost:8080
 ```
 
