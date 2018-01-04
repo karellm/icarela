@@ -8,58 +8,81 @@ html, body {
 
 .container {
     margin: 0 auto;
-    width: 980px;
+    width: 100%;
+    max-width: 980px;
 }
 
 /* Header
  * ------------------------ */
- $header-height: 72px;
+ $header-height: 96px;
  $header-bg: #F9F9F9;
 
 .page-header {
-    background: $header-bg;
+    // background: $header-bg;
+    background-image: linear-gradient(rgba(255,255,255,.85), rgba(255,255,255,.85) 56px, $header-bg 57px, $header-bg);
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
     position: fixed;
     top: 0; left: 0;
-    width: 100%; height: $header-height;
+    width: 100%;
+    height: $header-height;
     z-index: 10;
+
+    .container {
+        position: relative;
+        height: $header-height;
+    }
 }
 
 .page-logo {
     background: url(../images/logo@2x.png) no-repeat 0 0;
-    background-size: 284px 39px;
+    background-size: auto 28px;
     border: none;
     text-indent: -9999px;
 
     display: block;
     float: left;
-    margin: ($header-height - 38px)/2 0 0;
+    margin: 12px 0 0;
     padding: 0;
-    width: 284px; height: 39px;
+    width: 206px; height: 28px;
+}
+
+.page-number {
+    color: $blue;
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 18px 0 0;
 }
 
 /* Menu
  * ------------------------ */
 .page-menu {
-    float: right;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .page-menu ul {
     list-style: none;
-    /* overflow: hidden; */
     margin: 0; padding: 0;
 }
 
+.page-menu > ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .page-menu li {
+    $menu-height: 36px;
     $border-size: 3px;
 
-    float: left;
     position: relative;
-    margin: 0 0 0 12px;
+    flex: 0 1 auto;
 
     &:hover {
-        /* border-bottom: 3px solid \$grey-separator; */
-        height: $header-height - $border-size;
+        height: $menu-height - $border-size;
 
         ul {
             padding: 0 0 12px 0;
@@ -67,13 +90,13 @@ html, body {
         }
     }
 
-    &.decouverte:hover ul { height: 24px * 3 + 12px; }
+    &.decouverte:hover ul { height: 24px * 4 + 12px; }
     &.distribution:hover ul { height: 24px * 5 + 12px; }
 
     &.active {
         border-bottom: $border-size solid $light-blue;
         color: $light-blue;
-        height: $header-height - $border-size;
+        height: $menu-height - $border-size;
 
         & > a {
             color: $light-blue;
@@ -82,19 +105,19 @@ html, body {
 
     &.dropdown:hover {
         border: none;
-        height: $header-height;
+        height: $menu-height;
     }
 
     a {
         color: $blue;
         font-size: 16px;
         letter-spacing: 1px;
-        line-height: 70px;
+        line-height: $menu-height;
         text-decoration: none;
 
         display: inline-block;
         padding: 0 6px;
-        height: $header-height;
+        height: $menu-height;
 
         &:hover {
             color: $light-blue;
@@ -107,7 +130,7 @@ html, body {
         border-bottom-right-radius: 2px;
         box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.5);
         position: absolute;
-        top: $header-height;
+        top: $menu-height;
         left: -12px;
         padding: 0;
         overflow: hidden;
@@ -160,9 +183,8 @@ html, body {
 
     overflow: hidden;
     position: relative;
-    margin-top: 72px;
     width: 100%;
-    height: 320px;
+    height: 400px;
 
     .container {
         position: relative;
@@ -173,7 +195,6 @@ html, body {
       float: right;
       position: absolute;
       top: 40px; right: 30px;
-      /* margin: 40px 30px 0 0; */
       width: 340px;
       z-index: 10;
 
