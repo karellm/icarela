@@ -12,6 +12,8 @@ node serve.js
 
 Set the credentials:
 
+- [ ] Update sitemap: www.xml-sitemaps.com
+
 ```
 cp .env.example .env
 # edit the file with proper credentials

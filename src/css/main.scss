@@ -7,19 +7,5 @@ $lighter-blue: #28afe5;
 $grey-text: #333;
 $grey-separator: #E6E6E6;
 
-
-@font-face {
-    font-family: 'icons';
-    src:url('../fonts/icons/icomoon.eot?-tm5bzn');
-    src:url('../fonts/icons/icomoon.eot?#iefix-tm5bzn') format('embedded-opentype'),
-        url('../fonts/icons/icomoon.woff?-tm5bzn') format('woff'),
-        url('../fonts/icons/icomoon.ttf?-tm5bzn') format('truetype'),
-        url('../fonts/icons/icomoon.svg?-tm5bzn#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-// @import "fancybox";
-@import "superslides";
 @import "page";
 @import "content";

@@ -234,6 +234,20 @@ table.compare {
     }
 }
 
+.columns {
+    display: flex;
+    justify-content: space-between;
+
+    & > div {
+        flex: 1 1 auto;
+        min-width: 254px;
+
+        & + div {
+            margin-left: 24px;
+        }
+    }
+}
+
 .half, .third, .two-third {
     float: left;
     margin: 0;
@@ -374,6 +388,10 @@ p.message {
 }
 .button-social.twitter {
     background: url('../images/social/twitter_32.png') no-repeat 0 0;
+    color: #598dca;
+}
+.button-social.youtube {
+    background: url('../images/social/youtube_32.png') no-repeat 0 0;
     color: #598dca;
 }
 

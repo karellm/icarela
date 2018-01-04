@@ -8,187 +8,122 @@
 
 <url>
   <loc>http://icarela.fr/</loc>
-  <lastmod>2014-10-31T08:58:54+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://icarela.fr/decouverte/</loc>
-  <lastmod>2014-10-31T08:58:34+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2018-01-05T19:10:14+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
   <loc>http://icarela.fr/baptemes-de-l-air/la-baule.html</loc>
-  <lastmod>2014-10-31T08:58:35+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2018-01-05T19:10:14+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>http://icarela.fr/initiation-au-pilotage/vol-initiation.html</loc>
-  <lastmod>2014-10-31T08:58:40+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://icarela.fr/decouverte/guides/classes-ulm.html</loc>
-  <lastmod>2014-10-31T08:58:37+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2018-01-05T19:10:14+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>http://icarela.fr/ecole/</loc>
-  <lastmod>2014-10-31T08:58:50+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2018-01-05T19:10:14+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>http://icarela.fr/distribution/</loc>
-  <lastmod>2014-10-31T18:01:47+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2018-01-05T19:10:14+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://icarela.fr/distribution/sila-450c/</loc>
-  <lastmod>2014-10-31T08:58:49+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>http://icarela.fr/distribution/aeroprakt-a22/</loc>
+  <lastmod>2018-01-05T19:10:14+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://icarela.fr/distribution/ela-10-eclipse/</loc>
-  <lastmod>2014-10-31T08:58:47+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>http://icarela.fr/distribution/trixy/liberty.html</loc>
+  <lastmod>2018-01-05T19:10:14+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://icarela.fr/distribution/ela-09-junior/</loc>
-  <lastmod>2014-10-31T08:58:46+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://icarela.fr/distribution/ela-07-cougar/</loc>
-  <lastmod>2014-10-31T08:58:43+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>http://icarela.fr/distribution/trixy/princess.html</loc>
+  <lastmod>2018-01-05T19:10:14+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>http://icarela.fr/services.html</loc>
-  <lastmod>2014-10-31T08:58:55+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2018-01-05T19:10:14+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>http://icarela.fr/contact.html</loc>
-  <lastmod>2014-10-31T08:58:53+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2018-01-05T19:10:14+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>http://icarela.fr/baptemes-de-l-air/pornic.html</loc>
-  <lastmod>2014-10-31T08:58:35+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2018-01-05T19:10:14+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://icarela.fr/baptemes-de-l-air/golfe-morbihan.html</loc>
-  <lastmod>2014-10-31T08:58:35+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2018-01-05T19:10:14+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://icarela.fr/baptemes-de-l-air/les-iles.html</loc>
-  <lastmod>2014-10-31T08:58:35+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2018-01-05T19:10:14+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://icarela.fr/baptemes-de-l-air/duo.html</loc>
-  <lastmod>2014-10-31T08:58:35+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2018-01-05T19:10:14+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://icarela.fr/initiation-au-pilotage/vol-initiation-double.html</loc>
-  <lastmod>2014-10-31T08:58:39+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2018-01-05T19:10:14+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://icarela.fr/initiation-au-pilotage/stage-initiation.html</loc>
-  <lastmod>2014-10-31T08:58:39+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://icarela.fr/decouverte/guides/avion-autogire.html</loc>
-  <lastmod>2014-10-31T08:58:37+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2018-01-05T19:10:14+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://icarela.fr/ecole/brevet.html</loc>
-  <lastmod>2014-10-31T08:58:50+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2018-01-05T19:10:14+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://icarela.fr/ecole/perfectionnement/pilotage-avance.html</loc>
-  <lastmod>2014-10-31T08:58:52+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2018-01-05T19:10:14+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://icarela.fr/distribution/ela-07s/</loc>
-  <lastmod>2014-10-31T08:58:44+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>http://icarela.fr/distribution/trixy/</loc>
+  <lastmod>2018-01-05T19:10:14+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://icarela.fr/distribution/sila-450c/fiche-technique.html</loc>
-  <lastmod>2014-10-31T08:58:48+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://icarela.fr/distribution/sila-450c/equipement-tarifs.html</loc>
-  <lastmod>2014-10-31T08:58:48+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://icarela.fr/distribution/ela-10-eclipse/fiche-technique.html</loc>
-  <lastmod>2014-10-31T08:58:47+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://icarela.fr/distribution/ela-10-eclipse/equipement-tarifs.html</loc>
-  <lastmod>2014-10-31T08:58:47+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://icarela.fr/distribution/ela-09-junior/fiche-technique.html</loc>
-  <lastmod>2014-10-31T08:58:45+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://icarela.fr/distribution/ela-09-junior/equipement-tarifs.html</loc>
-  <lastmod>2014-10-31T08:58:45+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://icarela.fr/distribution/ela-07-cougar/fiche-technique.html</loc>
-  <lastmod>2014-10-31T08:58:42+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://icarela.fr/distribution/ela-07-cougar/equipement-tarifs.html</loc>
-  <lastmod>2014-10-31T08:58:42+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>http://icarela.fr/distribution/aeroprakt-a22/fiche-technique.html</loc>
+  <lastmod>2018-01-05T19:10:14+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://icarela.fr/ecole/perfectionnement/vol-en-formation.html</loc>
-  <lastmod>2014-10-31T08:58:53+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2018-01-05T19:10:14+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
   <loc>http://icarela.fr/ecole/perfectionnement/copilote.html</loc>
-  <lastmod>2014-10-31T08:58:52+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2018-01-05T19:10:14+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
   <loc>http://icarela.fr/ecole/perfectionnement/reprise-activite.html</loc>
-  <lastmod>2014-10-31T08:58:52+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2018-01-05T19:10:14+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
   <loc>http://icarela.fr/ecole/perfectionnement/prise-en-main.html</loc>
-  <lastmod>2014-10-31T08:58:52+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://icarela.fr/distribution/ela-07s/fiche-technique.html</loc>
-  <lastmod>2014-10-31T08:58:44+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://icarela.fr/distribution/ela-07s/equipement-tarifs.html</loc>
-  <lastmod>2014-10-31T08:58:44+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2018-01-05T19:10:14+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 </urlset>
