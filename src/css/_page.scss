@@ -18,7 +18,6 @@ html, body {
  $header-bg: #F9F9F9;
 
 .page-header {
-    // background: $header-bg;
     background-image: linear-gradient(rgba(255,255,255,.85), rgba(255,255,255,.85) 56px, $header-bg 57px, $header-bg);
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
     position: fixed;
@@ -41,7 +40,7 @@ html, body {
 
     display: block;
     float: left;
-    margin: 12px 0 0;
+    margin: 12px 0 0 6px;
     padding: 0;
     width: 206px; height: 28px;
 }
@@ -51,11 +50,19 @@ html, body {
     float: right;
     font-size: 18px;
     font-weight: bold;
-    margin: 18px 0 0;
+    margin: 18px 6px 0 0;
 }
 
 /* Menu
  * ------------------------ */
+ .page-menu-toggle {
+    display: none;
+ }
+
+ .page-menu-social {
+    display: none;
+ }
+ 
 .page-menu {
     position: absolute;
     left: 0;
@@ -85,11 +92,11 @@ html, body {
         height: $menu-height - $border-size;
 
         ul {
-            padding: 0 0 12px 0;
             padding: 12px 0;
         }
     }
 
+    &.billeterie { display: none; }
     &.decouverte:hover ul { height: 24px * 4 + 12px; }
     &.distribution:hover ul { height: 24px * 5 + 12px; }
 
@@ -104,8 +111,7 @@ html, body {
     }
 
     &.dropdown:hover {
-        border: none;
-        height: $menu-height;
+        border-color: transparent;
     }
 
     a {
@@ -174,6 +180,100 @@ html, body {
     }
 }
 
+@media screen and (max-width: 800px) {
+    .page-header {
+        height: 54px;
+    }
+
+    .page-menu-social.page-social {
+        display: block;
+        margin-top: 24px;
+
+        a {
+            float: left;
+        }
+    }
+
+    .page-footer div {
+        display: none;
+    }
+    
+    .page-menu-toggle {
+        background: $header-bg;
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: -54px;
+        width: 54px;
+        height: 54px;
+    }
+
+    .page-menu {
+        background: $header-bg;
+        box-shadow: 0px 0 8px -1px rgba(0,0,0,0.5);
+        box-sizing: border-box;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        padding: 12px;
+        margin-left: -220px;
+        width: 220px;
+
+        transition: margin .2s ease-in-out;
+
+        &.open {
+            margin-left: 0;
+        }
+        
+        & > ul {
+            display: block;
+            overflow: auto;
+            width: 100%;
+            height: 100%;
+            
+            
+            ul {
+                border: none;
+                box-shadow: none;
+                position: static;
+                padding: 12px 0;
+                height: auto;
+            }
+        }
+        
+        & > ul .active {
+            border-color: transparent;
+        }
+        
+        li {
+            height: auto !important;
+
+            &.billeterie {
+                display: block
+            }
+        }
+
+    }
+
+    .page-logo {
+        margin-left: 60px;
+    }
+    
+    .page-number {
+        a, span {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .page-number {
+        display: none;
+    }
+}
+
 /* Cover
  * ------------------------ */
 .page-cover {
@@ -221,6 +321,10 @@ html, body {
       display: block;
       float: right;
       margin-top: 10px;
+    }
+
+    @media screen and (max-width: 700px) {
+        height: 240px;
     }
 }
 

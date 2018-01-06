@@ -1,5 +1,7 @@
 .left-menu {
     float: left;
+    box-sizing: border-box;
+    padding-left: 6px;
     padding-top: 56px;
     width: 190px;
 
@@ -40,14 +42,14 @@
         .title {
             color: #999;
             text-transform: uppercase;
-            /* font-variant: small-caps;
-            text-transform: lowercase; */
         }
     }
 }
 .right-content {
     float: right;
-    width: 700px;
+    padding: 0 6px;
+    box-sizing: border-box;
+    width: calc(100% - 210px);
 
     section {
         padding: 48px 0;
@@ -58,9 +60,22 @@
     }
 }
 
+@media screen and (max-width: 700px) {
+    .left-menu,
+    .right-content {
+        float: none;
+        padding-top: 0;
+        width: auto;
+    }
+}
+
 section {
     overflow: hidden;
     padding: 48px;
+
+    @media screen and (max-width: 400px) {
+        padding: 12px;
+    }
 
     h2, h3 {
         font-family: $font-sans;
@@ -100,6 +115,10 @@ section {
   img {
     width: 100%;
   }
+}
+
+img {
+    max-width: 100%;
 }
 
 .left-two-third {
@@ -235,45 +254,45 @@ table.compare {
 }
 
 .columns {
+    $gutter: 10px;
+    
     display: flex;
     justify-content: space-between;
+    margin-left: $gutter * -1;
+    width: calc(100% + 2 * #{$gutter});
 
     & > div {
         flex: 1 1 auto;
-        min-width: 254px;
+        box-sizing: border-box;
+        margin: 0 $gutter;
+        overflow: hidden;
+    }
 
-        & + div {
-            margin-left: 24px;
+    .half {
+        flex: 1 1 48%;
+    }
+
+    .third {
+        flex: 1 1 32%;
+    }
+    
+    .two-third {
+        flex: 1 1 66%;
+    }
+    
+    @media screen and (max-width: 700px) {
+        display: block;
+
+        & > div {
+            margin-top: 24px;
+        }
+
+        .third .polaroid {
+            position: relative;
+            left: 50%;
+            margin-left: -100px;
         }
     }
-}
-
-.half, .third, .two-third {
-    float: left;
-    margin: 0;
-    overflow: hidden;
-}
-
-.half {
-    padding: 0 80px 0 0;
-    width: 402px;
-}
-
-.third {
-  padding: 0 60px 0 0;
-  width: 254px;
-
-  img {
-    border: 3px solid #a2a2a2;
-  }
-}
-.two-third {
-    padding: 0 60px 0 0;
-    width: 568px;
-}
-
-.last {
-  padding-right: 0;
 }
 
 .center {
@@ -304,6 +323,22 @@ table.compare {
         &:after {
             content: "\276F";
             margin-left: 12px;
+        }
+    }
+}
+
+.cta-main {
+    margin: 48px 0;
+
+    .cta {
+        margin: 0 0 12px;
+    }
+    
+    @media screen and (max-width: 700px) {
+        margin: 24px 0;
+        
+        span {
+            display: block;
         }
     }
 }
@@ -396,12 +431,9 @@ p.message {
 }
 
 .numbers {
-    display: flex;
     margin-top: 48px;
 
     .number {
-        flex: 1 1 100px;
-
         span {
             text-align: center;
             display: block;

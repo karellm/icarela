@@ -6,6 +6,7 @@
     
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:400,600,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="/css/main.css" />
 </head>
@@ -16,12 +17,23 @@
     <div class="container">
         <a href="/" class="page-logo">Icarela</a>
         <nav class="page-menu">
+            <div class="page-menu-toggle">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
             <ul>
                 <li class=""><a href="/baptemes-de-l-air/la-baule.html">Baptêmes de l'air</a></li>
                 <li class=""><a href="/initiation-au-pilotage/vol-initiation.html">Initiation au pilotage</a></li>
                 <!-- <li class=""><a href="/decouverte/guides/classes-ulm.html">Guides</a></li>
                 -->
                 <li class=""><a href="/ecole">Ecole de pilotage</a></li>
+                    <li class="billeterie">
+                        <a href="https://www.weezevent.com/widget_billeterie.php?id_evenement=225512&lg_billetterie=1&code=59537&width_auto=1&color_primary=00AEEF" onclick="var w=window.open('https://www.weezevent.com/widget_billeterie.php?id_evenement=225512&lg_billetterie=1&code=59537&width_auto=1&color_primary=00AEEF', 'Billetterie_weezevent', 'width=650, height=600, top=100, left=100, toolbar=no, resizable=yes, scrollbars=yes, status=no'); w.focus(); return false;">Réservez en ligne</a>
+                    </li>
                 <li class="distribution dropdown ">
                     <a href="/distribution">Achat ULM</a>
                     <ul>
@@ -34,11 +46,17 @@
                 </li>
                 <li class=""><a href="/services.html">Services</a></li>
                 <li class="active"><a href="/contact.html">Contact</a></li>
+                <li class="page-menu-social page-social">
+                    <a class="facebook" href="//facebook.com/icarela.aero" target="_blank">Facebook</a>
+                    <a class="twitter" href="//twitter.com/icarela_jfl" target="_blank">Twitter</a>
+                    <a class="youtube" href="//www.youtube.com/channel/UCYV_17mikfthTggrvJCivnQ" target="_blank">Youtube</a>
+                </li>
             </ul>
         </nav>
         <div class="page-number">
-            <a href="https://www.weezevent.com/widget_billeterie.php?id_evenement=225512&lg_billetterie=1&code=59537&width_auto=1&color_primary=00AEEF" onclick="var w=window.open('https://www.weezevent.com/widget_billeterie.php?id_evenement=225512&lg_billetterie=1&code=59537&width_auto=1&color_primary=00AEEF', 'Billetterie_weezevent', 'width=650, height=600, top=100, left=100, toolbar=no, resizable=yes, scrollbars=yes, status=no'); w.focus(); return false;">Billetterie en ligne</a>
-             - 02 40 91 69 61
+            <a href="https://www.weezevent.com/widget_billeterie.php?id_evenement=225512&lg_billetterie=1&code=59537&width_auto=1&color_primary=00AEEF" onclick="var w=window.open('https://www.weezevent.com/widget_billeterie.php?id_evenement=225512&lg_billetterie=1&code=59537&width_auto=1&color_primary=00AEEF', 'Billetterie_weezevent', 'width=650, height=600, top=100, left=100, toolbar=no, resizable=yes, scrollbars=yes, status=no'); w.focus(); return false;">Réservez en ligne</a>
+            <span> - </span>
+            02 40 91 69 61
         </div>
     </div>
 </header>
@@ -50,139 +68,71 @@
 
 
 <section>
-    <div class="half">
-        <h2>Nous contacter</h2>
-        <p>
-            <strong>Ecole de pilotage / Centre d’essais / Atelier</strong><br>
-            Aérodrome de la Baule-Escoublac (LFRE)<br>
-            Allée de l'aéropostale<br>
-            Hangar Eagle 4<br>
-            44500 La Baule-Escoublac
-        </p>
+    <div class="columns">
+        <div class="half">
+            <h2>Nous contacter</h2>
+            <p>
+                <strong>Ecole de pilotage / Centre d’essais / Atelier</strong><br>
+                Aérodrome de la Baule (LFRE)<br>
+                Allée de l'aéropostale<br>
+                44500 La Baule-Escoublac
+            </p>
 
-        <p>
-            <strong>Siège social et commercial</strong><br>
-            16 Bd Saint Germain<br>
-            75005 Paris
-        </p>
+            <p>
+                <strong>Siège social et commercial</strong><br>
+                16 Bd Saint Germain<br>
+                75005 Paris
+            </p>
 
-        <p>
-            <strong>Téléphone</strong><br>
-            +33 (0)2 40 91 69 61
-        </p>
+            <p>
+                <strong>Téléphone</strong><br>
+                +33 (0)2 40 91 69 61
+            </p>
 
-        <p>
-            <strong>Email</strong><br>
-            <a href="mailto:infos@icarela.fr">infos@icarela.fr</a>
-        </p>
-    </div>
-    <div class="half last">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3274.699678949367!2d-2.352026!3d47.286745!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48055d3de727065d%3A0x52b2e8e524c5b73d!2sIcarela!5e1!3m2!1sen!2s!4v1414373630927" width="402" height="416" frameborder="0" style="border:0"></iframe>
+            <p>
+                <strong>Email</strong><br>
+                <a href="mailto:infos@icarela.fr">infos@icarela.fr</a>
+            </p>
+        </div>
+        <div class="half">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3274.699678949367!2d-2.352026!3d47.286745!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48055d3de727065d%3A0x52b2e8e524c5b73d!2sIcarela!5e1!3m2!1sen!2s!4v1414373630927" width="402" height="416" frameborder="0" style="border:0"></iframe>
+        </div>
     </div>
 </section>
 
 <section>
-    <div class="half">
-        <h4>Inscrivez-vous à notre mailing list</h4>
+    <div class="columns">
+        <div class="half">
+            <h4>Restez informés avec notre newsletter</h4>
 
-        <form action="https://icarela.us4.list-manage.com/subscribe/post?u=1224e905c5370cc98cf02e7e1&amp;id=959ec3d706" method="post" novalidate target="_blank">
-            <p>
-                <input id="fieldName" name="cm-name" type="text" placeholder="Nom" />
-            </p>
-            <p>
-                <input id="fieldEmail" name="cm-ijuddi-ijuddi" type="email" placeholder="Email" required />
-            </p>
-            <p class="message"></p>
-            <p>
-                <button type="submit" class="cta">Inscrivez-vous</button>
-            </p>
-        </form>
-    </div>
+            <form action="https://icarela.us4.list-manage.com/subscribe/post?u=1224e905c5370cc98cf02e7e1&amp;id=959ec3d706" method="post" novalidate target="_blank" class="mailing-list">
+                <p>
+                    <input id="fieldName" name="cm-name" type="text" placeholder="Nom" />
+                </p>
+                <p>
+                    <input id="fieldEmail" name="cm-ijuddi-ijuddi" type="email" placeholder="Email" required />
+                </p>
+                <p class="message"></p>
+                <p>
+                    <button type="submit" class="cta">Je m'inscris</button>
+                </p>
+            </form>
+        </div>
 
-    <div class="half last">
-        <h4>Suivez-nous sur les réseaux sociaux</h4>
-        <p>
-            <a class="button-social facebook" href="//facebook.com/icarela.aero" target="_blank">Facebook</a>
-        </p>
-        <p>
-            <a class="button-social twitter" href="//twitter.com/icarela_jfl" target="_blank">Twitter</a>
-        </p>
-        <p>
-            <a class="button-social youtube" href="//www.youtube.com/channel/UCYV_17mikfthTggrvJCivnQ" target="_blank">Youtube</a>
-        </p>
+        <div class="half">
+            <h4>Suivez-nous sur les réseaux sociaux</h4>
+            <p>
+                <a class="button-social facebook" href="//facebook.com/icarela.aero" target="_blank">Facebook</a>
+            </p>
+            <p>
+                <a class="button-social twitter" href="//twitter.com/icarela_jfl" target="_blank">Twitter</a>
+            </p>
+            <p>
+                <a class="button-social youtube" href="//www.youtube.com/channel/UCYV_17mikfthTggrvJCivnQ" target="_blank">Youtube</a>
+            </p>
+        </div>
     </div>
 </section>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var $form = document.querySelector('form')
-        var $message = document.querySelector('.message')
-        var $email = document.getElementById('fieldEmail')
-        var $name = document.getElementById('fieldName')
-        var url = $form.getAttribute('action').replace('/post?', '/post-json?')
-
-        $form.addEventListener('submit', function (event) {
-            event.preventDefault()
-
-            var data = new FormData($form)
-    
-            if (/@/.test($email.value) && $name.value) {
-                $email.classList.remove('error')
-                $name.classList.remove('error')
-                $message.classList.remove('error', 'success')
-
-                document.MC_callback = function (response) {
-                    if (response.result == 'success') {
-                        $email.value = ''
-                        $name.value = ''
-                        $message.classList.add('success')
-                        $message.innerText = 'Succès ! Une confirmation vous a été envoyée par email.'
-                    }
-                    else if (response.msg && response.msg.indexOf('already subscribed')) {
-                        $message.classList.add('error')
-                        $message.innerText = 'Vous êtes déjà inscrit(e).'
-                    }
-                    else {
-                        $message.classList.add('error')
-                        $message.innerText = 'Une erreur est survenue, merci de réessayer.'
-                    }
-                }
-            
-                // generate script
-                var script = document.createElement('script')
-                script.type = 'text/javascript'
-                script.src = 
-                    url + 
-                    '&c=document.MC_callback&FNAME=' + 
-                    encodeURIComponent($name.value) + 
-                    '&EMAIL=' + 
-                    encodeURIComponent($email.value)
-            
-                // append script to head    
-                document.getElementsByTagName('head')[0].appendChild(script)
-            }
-            else {
-                $message.classList.add('error')
-                $message.classList.remove('success')
-                
-                if (!$name.value) {
-                    $name.classList.add('error')
-                    $message.innerText = 'Un nom est requis.'
-                }
-                else {
-                    $name.classList.remove('error')
-                }
-                if (!/@/.test($email.value)) {
-                    $email.classList.add('error')
-                    $message.innerText = 'Un email est requis.'
-                }
-                else {
-                    $email.classList.remove('error')
-                }
-            }
-        });
-    }, false)
-</script>
 
         </div>
     </div>
@@ -198,6 +148,7 @@
         </div>
     </div>
 
+<script type="text/javascript" src="/js/main.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
